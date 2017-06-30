@@ -208,6 +208,32 @@ For the documentation part, [click here](https://facebook.github.io/react/docs/h
 
 A little-bit more about create-react-app. [Click here](https://medium.com/@diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc)
 
+## Using webpack-dev-server
+
+Another utility, which makes our work more easier is **webpack-dev-server**.  
+How it works is, we don't need express anymore to serve our static **index.html** file. Webpack-dev-server will automatically do it for us. What we need to do is just call webpack-dev-server.  
+
+But before calling it, we need to install it globally:  
+	
+For Windows users...
+		
+	npm install --global webpack-dev-server
+
+For Linux users...  
+
+	sudo npm install --global webpack-dev-server
 
 
+For running the webpack-dev-server, type the following command in your terminal:  
 
+	webpack-dev-server --content-base static
+
+Here, **content-base** flag is used for specifying what files you want webpack-dev-server to serve. As we want our **index.html** to be served, therefore we write **static** as the default **index.html** gets automatically served then.
+
+
+One last thing here is, if we want to enable the hot-loading, meaning we want the webpack to automatically run if some modification is done to the file, then we have to specify another flag, the **inline** flag.  
+
+	webpack-dev-server --content-base static --inline
+
+
+	
