@@ -235,5 +235,24 @@ One last thing here is, if we want to enable the hot-loading, meaning we want th
 
 	webpack-dev-server --content-base static --inline
 
+## Using the **scripts** field in package.json
 
-	
+If you'll open the **package.json** file in the root directory, then you'll see a field or rather key named **scripts**. This is used to write scripts that we frequently need to execute.  
+
+As we need to start the webpack-dev-server frequently, it'll be better if we write a script to start it.  
+
+To write the script for webpack-dev-server, we need to copy and paste the following command:
+
+	"dev": "webpack-dev-server --content-base static --inline",
+
+The first part of the above statement is used for assigning a **unique** name to your script.  
+The second part concerns with writing the script command.  
+
+You can now use the command:
+
+	npm run dev
+
+to run the script named **dev**	 
+
+
+###### Click **[here](https://github.com/sudowebdev/react-basic-app/commits/master)** to see the commit-by-commit code.
