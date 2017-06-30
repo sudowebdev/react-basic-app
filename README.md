@@ -206,7 +206,7 @@ For the documentation part, [click here](https://facebook.github.io/react/docs/h
 
 **Please Note**: There is another way for setting up your environment for React using the create-react-app command. But this command adds a whole lot of code which I don't consider as necessary. Anyhow, if you want to try that way, then [click here](https://facebook.github.io/react/docs/installation.html) to see how. The answer to how is mentioned in the **Create a New App** tab.  
 
-A little-bit more about create-react-app. [Click here](https://medium.com/@diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc)
+A little-bit more about create-react-app. [Click here](https://medium.com/@diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc){:target="_blank"}
 
 
 
