@@ -137,4 +137,74 @@ If it shows something like this (don't mind the error):
 	Version: webpack 3.0.0
 	Time: 31ms
 
-Then your webpack is up and running. If not, then you have to do the above steps again.
+Then your webpack is up and running. If not, then you have to do the above steps again.  
+
+## Step 3: Creating your first React Component
+
+1. Create a new folder **src** in the root-directory. (our BUILD_DIR is **src/**).  
+2. Create a new file (in src) with the name **app.jsx** as we have mentioned the same in the **entry** field in **webpack.config.js**  
+3. Now we have to install 2 more dependencies: react and react-dom  
+
+Install the dependencies by writing the following command in your terminal:
+
+	npm install --save react react-dom
+ 
+4. Now, type the following code in your **app.jsx** file.
+
+**app.jsx**
+
+	import React from 'react';
+	import ReactDOM from 'react-dom';
+	
+	class App extends React.Component{
+		render(){
+			return (<div>Hello World</div>);
+		}
+	}
+
+	var element = <App />;
+	var node = document.getElementById('app');
+
+	ReactDOM.render(element, node); 
+
+5. Finally, include bundle.js in your index.html (just above the closing <body> tag)  
+
+Now, run the webpack command:  
+	
+	./node_modules/.bin/webpack
+
+We run our command like this because we have only installed webpack locally in our project.  
+For installing it globally, run:  
+
+For Windows users  
+		
+	npm install --global webpack
+
+For Linux users...  
+
+	sudo npm install --global webpack
+
+
+Now, the command:  
+
+	webpack
+
+will do the work as expected.  
+
+Now, the only thing left is to start your server:
+
+	node server
+
+You can now see your first React-App (**showing Hello World**) by opening **localhost:3000** in your web-browser.
+
+##### TA-DAA! You have just made your first React App!!
+
+
+If you need an e-book for reference, then do refer [this](https://www.fullstackreact.com/assets/media/sGEMe/MNzue/30-days-of-react-ebook-fullstackio.pdf)  
+For the documentation part, [click here](https://facebook.github.io/react/docs/hello-world.html)
+
+
+**Please Note**: There is another way for setting up your environment for React using the create-react-app command. But this command adds a whole lot of code which I don't consider as necessary. Anyhow, if you want to try that way, then [click here](https://facebook.github.io/react/docs/installation.html) to see how. The answer to how is mentioned in the **Create a New App** tab.  
+
+
+
